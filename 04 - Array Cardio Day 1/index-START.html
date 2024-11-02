@@ -68,13 +68,20 @@ const boulWithDe=boulArray.filter(boul=>boul.includes("de"))
     // 7. sort Exercise
     // Sort the people alphabetically by last name
 const sortedPeople=people.sort()
-console.log(sortedPeople)
+// console.log(sortedPeople)
 ;
 
 
     // 8. Reduce Exercise
     // Sum up the instances of each of these
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
+carInstances=data.reduce((object, item,index,array)=> {
+while (array.indexOf(item,index+1)!=-1){
+  object[item]=+1};
+return object}, object={}
+)
+console.log(carInstances)
+
 
   </script>
 </body>
